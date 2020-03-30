@@ -6,6 +6,8 @@ import {
   TextArea,
   TextInput,
   Button,
+  ModalWrapper,
+  Link,
 } from 'carbon-components-react';
 
 import Select from 'react-select';
@@ -1139,6 +1141,21 @@ class OpenScale extends React.Component {
             <br />
             <br />
             <p>{this.props.bias}</p>
+            <ModalWrapper
+              size="md"
+              triggerButtonKind="ghost"
+              passiveModal={true}
+              buttonTriggerText="Learn more"
+              modalHeading="Protected Against Bias"
+              modalLabel="Watson OpenScale">
+              <p>
+                {' '}
+                The Watson OpenScale Protected Against Bias seal means your
+                business can be assured that the potential bias in the
+                prediction has been mitigated from common attributes such as
+                gender, age, ethnicity and other factors.{' '}
+              </p>
+            </ModalWrapper>
           </Tile>
         </div>
       );

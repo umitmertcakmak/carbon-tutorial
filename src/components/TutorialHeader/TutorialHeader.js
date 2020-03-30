@@ -23,9 +23,6 @@ const TutorialHeader = () => (
       <HeaderMenuItem element={Link} to="/claimassessment">
         Claim Assessment
       </HeaderMenuItem>
-      <HeaderMenuItem element={Link} to="/repos">
-        Claim Reporting
-      </HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>
       <HeaderGlobalAction aria-label="Notifications">

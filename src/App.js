@@ -15,10 +15,10 @@ class App extends Component {
         <TutorialHeader />
         <Content>
           <Switch>
-            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/" component={ClaimAssessment} />
             <Route path="/claimassessment" component={ClaimAssessment} />
-            <Route path="/claimresult" component={ClaimResult} />
-            <Route path="/repos" component={RepoPage} />
+            {/*<Route path="/claimresult" component={ClaimResult} />*/}
+            {/*<Route path="/repos" component={RepoPage} />*/}
           </Switch>
         </Content>
       </>

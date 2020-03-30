@@ -14,14 +14,17 @@ import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
-  <Header aria-label="Carbon Tutorial">
+  <Header aria-label="BlueCo Insurance">
     <SkipToContent />
-    <HeaderName element={Link} to="/" prefix="IBM">
-      Carbon Tutorial
+    <HeaderName element={Link} to="/" prefix="BlueCo">
+      Insurance
     </HeaderName>
-    <HeaderNavigation aria-label="Carbon Tutorial">
+    <HeaderNavigation aria-label="BlueCo Insurance">
+      <HeaderMenuItem element={Link} to="/claimassessment">
+        Claim Assessment
+      </HeaderMenuItem>
       <HeaderMenuItem element={Link} to="/repos">
-        Repositories
+        Claim Reporting
       </HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,6 +7,10 @@ import {
   Tabs,
   Tab,
 } from 'carbon-components-react';
+
+import { TestComponent } from '../../components/TestComponent';
+import { ApiCaller } from '../../components/ApiCallerClassTestComponent';
+
 import { InfoSection, InfoCard } from '../../components/Info';
 import Globe32 from '@carbon/icons-react/lib/globe/32';
 import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
@@ -34,9 +39,12 @@ const LandingPage = () => {
               <a href="/">Getting started</a>
             </BreadcrumbItem>
           </Breadcrumb>
+
           <h1 className="landing-page__heading">
             Design &amp; build with Carbon
           </h1>
+
+          <TestComponent />
         </div>
       </div>
       <div className="bx--row landing-page__r2">
@@ -68,6 +76,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
+
             <Tab {...props.tab} label="Design">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
@@ -75,6 +84,8 @@ const LandingPage = () => {
                     Rapidly build beautiful and accessible experiences. The
                     Carbon kit contains all resources you need to get started.
                   </div>
+
+                  <ApiCaller />
                 </div>
               </div>
             </Tab>
